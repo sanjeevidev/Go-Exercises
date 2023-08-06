@@ -24,11 +24,10 @@ func main() {
   fmt.Println(student1) #John
   fmt.Println(student2) #Jane
   fmt.Println(x) #2
-}</tt></i><br><h2></h2>
-
+}</tt></i><br>
+<hr>
 <h2>Multiple Variable Declaration</h2>
 <p>In Go, it is possible to declare multiple variables in the same line.<br>
-<b>Example</b><br>
 <h2>Example :</h2></p>
 
 <i><tt>package main
@@ -40,3 +39,21 @@ func main() {
   fmt.Println(c)
   fmt.Println(d)
 }</tt></i>
+
+<p>Multiple variable declarations can also be grouped together into a block for greater readability:</p>
+<h2>Example :</h2>
+<i><tt>
+package main
+import ("fmt")
+func main() {
+  var (
+    a int
+    b int    = 1
+    c string = "hello"
+  )
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+}
+  
+</tt></i>
