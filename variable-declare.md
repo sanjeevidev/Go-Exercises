@@ -15,7 +15,9 @@ Note: You always have to specify either type or value (or both).</p>
 <p><tt>variablename := value</tt></p>
 
 <h2> Example :</h2>
-<i><tt>package main
+
+```go
+package main
 import ("fmt")
 func main() {
   var student1 string = "John" //type is string
@@ -24,13 +26,15 @@ func main() {
   fmt.Println(student1) #John
   fmt.Println(student2) #Jane
   fmt.Println(x) #2
-}</tt></i><br>
+}
+```
+<br>
 <hr>
 <h2>Multiple Variable Declaration</h2>
 <p>In Go, it is possible to declare multiple variables in the same line.<br>
 <h2>Example :</h2></p>
 
-<i><tt>
+```go
 package main
 import ("fmt")
 func main() {
@@ -40,11 +44,12 @@ func main() {
    fmt.Println(c)
    fmt.Println(d)
 }
-</tt></i>
+```
 
 <p>Multiple variable declarations can also be grouped together into a block for greater readability:</p>
 <h2>Example :</h2>
-<i><tt>
+
+```go
 package main
 import ("fmt")
 func main() {
@@ -57,4 +62,4 @@ func main() {
   fmt.Println(b)
   fmt.Println(c)
 }
-</tt></i>
+```
