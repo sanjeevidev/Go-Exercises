@@ -30,15 +30,17 @@ func main() {
 <p>In Go, it is possible to declare multiple variables in the same line.<br>
 <h2>Example :</h2></p>
 
-<i><tt>package main
+<i><tt>
+package main
 import ("fmt")
 func main() {
   var a, b, c, d int = 1, 3, 5, 7
-  fmt.Println(a)
-  fmt.Println(b)
-  fmt.Println(c)
-  fmt.Println(d)
-}</tt></i>
+   fmt.Println(a)
+   fmt.Println(b)
+   fmt.Println(c)
+   fmt.Println(d)
+}
+</tt></i>
 
 <p>Multiple variable declarations can also be grouped together into a block for greater readability:</p>
 <h2>Example :</h2>
@@ -55,5 +57,4 @@ func main() {
   fmt.Println(b)
   fmt.Println(c)
 }
-  
 </tt></i>
