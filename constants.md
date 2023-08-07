@@ -41,3 +41,23 @@ There are two types of constants:
 
 1. Typed constants
 2. Untyped constants
+
+# Typed Constants
+
+Typed constants are declared with a defined type:
+
+## Example
+
+``` go
+package main
+
+import (
+    "fmt"
+)
+
+const A int = 1
+
+func main() {
+    fmt.Println(A)
+}
+```
