@@ -61,3 +61,18 @@ func main() {
     fmt.Println(A)
 }
 ```
+
+# Untyped Constants
+Untyped constants are declared without a type:
+
+## Example
+``` go
+package main
+import ("fmt")
+
+const A = 1
+
+func main() {
+  fmt.Println(A)
+}
+```
