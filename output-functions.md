@@ -28,3 +28,23 @@ func main() {
     fmt.Print(j)
 }
 ```
+
+# Example
+
+If we want to print the arguments on new lines, we can use the `\n` escape sequence.
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var i, j string = "Hello", "World"
+
+    fmt.Print(i, "\n")
+    fmt.Print(j, "\n")
+}
+```
+
