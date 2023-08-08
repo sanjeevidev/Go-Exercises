@@ -115,3 +115,29 @@ func main() {
     fmt.Printf("% x\n", txt)
 }
 ```
+
+# Boolean Formatting Verbs
+
+The following verb can be used with the boolean data type:
+
+| Verb   | Description                                    |
+| ------ | ---------------------------------------------- |
+| `%t`   | Value of the boolean operator in true or false format (same as using `%v`) |
+
+## Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var i = true
+    var j = false
+
+    fmt.Printf("%t\n", i)
+    fmt.Printf("%t\n", j)
+}
+```
