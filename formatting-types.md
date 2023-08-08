@@ -81,3 +81,37 @@ func main() {
     fmt.Printf("%04d\n", i)
 }
 ```
+
+# String Formatting Verbs
+
+The following verbs can be used with the string data type:
+
+| Verb   | Description                                 |
+| ------ | ------------------------------------------- |
+| `%s`   | Prints the value as plain string            |
+| `%q`   | Prints the value as a double-quoted string  |
+| `%8s`  | Prints the value as plain string (width 8, right justified)   |
+| `%-8s` | Prints the value as plain string (width 8, left justified)    |
+| `%x`   | Prints the value as hex dump of byte values |
+| `% x`  | Prints the value as hex dump with spaces    |
+
+## Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var txt = "Hello"
+
+    fmt.Printf("%s\n", txt)
+    fmt.Printf("%q\n", txt)
+    fmt.Printf("%8s\n", txt)
+    fmt.Printf("%-8s\n", txt)
+    fmt.Printf("%x\n", txt)
+    fmt.Printf("% x\n", txt)
+}
+```
