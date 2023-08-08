@@ -6,7 +6,7 @@ Go has three functions to output text:
 - `Println()`
 - `Printf()`
 
-## The Print() Function
+# The Print() Function
 
 The `Print()` function prints its arguments with their default format.
 
@@ -29,7 +29,7 @@ func main() {
 }
 ```
 
-# Example
+## Example
 
 If we want to print the arguments on new lines, we can use the `\n` escape sequence.
 
@@ -48,3 +48,22 @@ func main() {
 }
 ```
 
+# The Println() Function
+
+The `Println()` function is similar to `Print()` with the difference that a whitespace is added between the arguments, and a newline is added at the end.
+
+### Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var i, j string = "Hello", "World"
+
+    fmt.Println(i, j)
+}
+```
