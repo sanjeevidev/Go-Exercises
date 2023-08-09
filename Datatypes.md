@@ -95,3 +95,15 @@ func main() {
     fmt.Printf("Type: %T, value: %v\n", y, y)
 }
 ```
+
+# Signed Integer Types in Go
+
+Go has five keywords/types of signed integers:
+
+| Type  | Size               | Range                                                      |
+| ----- | ------------------ | ---------------------------------------------------------- |
+| int   | Depends on platform| -2147483648 to 2147483647 in 32 bit systems and -9223372036854775808 to 9223372036854775807 in 64 bit systems      |
+| int8  | 8 bits / 1 byte    | -128 to 127                                               |
+| int16 | 16 bits / 2 bytes  | -32768 to 32767                                           |
+| int32 | 32 bits / 4 bytes  | -2147483648 to 2147483647                                 |
+| int64 | 64 bits / 8 bytes  | -9223372036854775808 to 9223372036854775807               |
