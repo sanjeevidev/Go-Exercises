@@ -34,13 +34,13 @@ func main() {
 }
 ```
 
-# Boolean Data Type
+## Boolean Data Type
 
 A boolean data type is declared with the `bool` keyword and can only take the values `true` or `false`.
 
 The default value of a boolean data type is `false`.
 
-## Example
+### Example
 
 This example shows different ways to declare Boolean variables:
 
@@ -64,7 +64,7 @@ func main() {
 }
 ```
 
-# Go Integer Data Types
+## Go Integer Data Types
 
 Integer data types are used to store a whole number without decimals, like 35, -50, or 1345000.
 
@@ -75,11 +75,11 @@ The integer data type has two categories:
 
 **Tip:** The default type for integer is `int`. If you do not specify a type, the type will be `int`.
 
-# Signed Integers
+## Signed Integers
 
 Signed integers, declared with one of the `int` keywords, can store both positive and negative values.
 
-## Example
+### Example
 
 ```go
 package main
@@ -96,7 +96,7 @@ func main() {
 }
 ```
 
-# Signed Integer Types in Go
+## Signed Integer Types in Go
 
 Go has five keywords/types of signed integers:
 
@@ -108,11 +108,11 @@ Go has five keywords/types of signed integers:
 | int32 | 32 bits / 4 bytes  | -2147483648 to 2147483647                                 |
 | int64 | 64 bits / 8 bytes  | -9223372036854775808 to 9223372036854775807               |
 
-# Unsigned Integer Types in Go
+## Unsigned Integer Types in Go
 
 Unsigned integers, declared with one of the `uint` keywords, can only store non-negative values.
 
-## Example
+### Example
 
 ```go
 package main
@@ -128,7 +128,7 @@ func main() {
     fmt.Printf("Type: %T, value: %v\n", y, y)
 }
 ```
-# Unsigned Integer Types in Go
+## Unsigned Integer Types in Go
 
 Go has five keywords/types of unsigned integers:
 
@@ -139,3 +139,53 @@ Go has five keywords/types of unsigned integers:
 | uint16 | 16 bits / 2 bytes  | 0 to 65535                                                 |
 | uint32 | 32 bits / 4 bytes  | 0 to 4294967295                                            |
 | uint64 | 64 bits / 8 bytes  | 0 to 18446744073709551615                                  |
+
+# Go Float Data Types
+
+The float data types are used to store positive and negative numbers with a decimal point, like 35.3, -2.34, or 3597.34987.
+
+The float data type has two keywords:
+
+| Type     | Size       | Range                             |
+| -------- | ---------- | --------------------------------- |
+| `float32`| 32 bits    | -3.4e+38 to 3.4e+38              |
+| `float64`| 64 bits    | -1.7e+308 to +1.7e+308           |
+
+**Tip:** The default type for float is `float64`. If you do not specify a type, the type will be `float64`.
+
+## The `float32` Keyword
+
+Example:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var x float32 = 123.78
+    var y float32 = 3.4e+38
+    fmt.Printf("Type: %T, value: %v\n", x, x)
+    fmt.Printf("Type: %T, value: %v\n", y, y)
+}
+```
+## The `float64` Keyword
+
+The `float64` data type can store a larger set of numbers than `float32`.
+
+## Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var x float64 = 1.7e+308
+    fmt.Printf("Type: %T, value: %v", x, x)
+}
+```
