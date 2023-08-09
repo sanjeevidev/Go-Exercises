@@ -4,14 +4,14 @@ In Go, there are two ways to declare a variable:
 <h3 >1. With the var keyword:</h3>
 <p>Use the var keyword, followed by variable name and type:</p>
 
-<h4>Syntax</h4>
+<h4>Syntax :</h4>
 <p><tt>var variablename type = value</tt><br>
 Note: You always have to specify either type or value (or both).</p>
 
 <h3>2. With the := sign:</h3>
 <p>Use the := sign, followed by the variable value:</p>
 
-<h4>Syntax</h4>
+<h4>Syntax :</h4>
 <p><tt>variablename := value</tt></p>
 
 <h2> Example :</h2>
@@ -30,7 +30,8 @@ func main() {
 ```
 <br>
 <hr>
-<h2>Multiple Variable Declaration</h2>
+
+## Multiple Variable Declaration
 <p>In Go, it is possible to declare multiple variables in the same line.<br>
 <h2>Example :</h2></p>
 
@@ -47,7 +48,8 @@ func main() {
 ```
 
 <p>Multiple variable declarations can also be grouped together into a block for greater readability:</p>
-<h2>Example :</h2>
+
+## Example :
 
 ```go
 package main
