@@ -74,3 +74,24 @@ The integer data type has two categories:
 - Unsigned integers: can only store non-negative values
 
 **Tip:** The default type for integer is `int`. If you do not specify a type, the type will be `int`.
+
+# Signed Integers
+
+Signed integers, declared with one of the `int` keywords, can store both positive and negative values.
+
+## Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var x int = 500
+    var y int = -4500
+    fmt.Printf("Type: %T, value: %v\n", x, x)
+    fmt.Printf("Type: %T, value: %v\n", y, y)
+}
+```
