@@ -33,3 +33,33 @@ func main() {
     fmt.Println("String:  ", d)
 }
 ```
+
+# Boolean Data Type
+
+A boolean data type is declared with the `bool` keyword and can only take the values `true` or `false`.
+
+The default value of a boolean data type is `false`.
+
+## Example
+
+This example shows different ways to declare Boolean variables:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var b1 bool = true      // Typed declaration with initial value
+    var b2 = true           // Untyped declaration with initial value
+    var b3 bool             // Typed declaration without initial value
+    b4 := true              // Untyped declaration with initial value
+
+    fmt.Println(b1)         // Returns true
+    fmt.Println(b2)         // Returns true
+    fmt.Println(b3)         // Returns false
+    fmt.Println(b4)         // Returns true
+}
+```
