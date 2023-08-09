@@ -1,14 +1,14 @@
 # Declaring (Creating) Variables
 In Go, there are two ways to declare a variable:
 
-<h3 >1. With the var keyword:</h3>
+## 1. With the var keyword:
 <p>Use the var keyword, followed by variable name and type:</p>
 
 <h4>Syntax :</h4>
-<p><tt>var variablename type = value</tt><br>
-Note: You always have to specify either type or value (or both).</p>
+<p><tt>var variablename type = value</tt></p>
+<p>Note: You always have to specify either type or value (or both).</p>
 
-<h3>2. With the := sign:</h3>
+## 2. With the := sign:
 <p>Use the := sign, followed by the variable value:</p>
 
 <h4>Syntax :</h4>
@@ -47,7 +47,7 @@ func main() {
 }
 ```
 
-<p>Multiple variable declarations can also be grouped together into a block for greater readability:</p>
+<p>Multiple variable declarations can also be grouped together into a block for greater readability </p>
 
 ## Example :
 
