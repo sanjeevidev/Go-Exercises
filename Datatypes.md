@@ -107,3 +107,35 @@ Go has five keywords/types of signed integers:
 | int16 | 16 bits / 2 bytes  | -32768 to 32767                                           |
 | int32 | 32 bits / 4 bytes  | -2147483648 to 2147483647                                 |
 | int64 | 64 bits / 8 bytes  | -9223372036854775808 to 9223372036854775807               |
+
+# Unsigned Integer Types in Go
+
+Unsigned integers, declared with one of the `uint` keywords, can only store non-negative values.
+
+## Example
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var x uint = 500
+    var y uint = 4500
+    fmt.Printf("Type: %T, value: %v\n", x, x)
+    fmt.Printf("Type: %T, value: %v\n", y, y)
+}
+```
+# Unsigned Integer Types in Go
+
+Go has five keywords/types of unsigned integers:
+
+| Type   | Size               | Range                                                       |
+| ------ | ------------------ | ----------------------------------------------------------- |
+| uint   | Depends on platform| 0 to 4294967295 in 32 bit systems and 0 to 18446744073709551615 in 64 bit systems                      |
+| uint8  | 8 bits / 1 byte    | 0 to 255                                                   |
+| uint16 | 16 bits / 2 bytes  | 0 to 65535                                                 |
+| uint32 | 32 bits / 4 bytes  | 0 to 4294967295                                            |
+| uint64 | 64 bits / 8 bytes  | 0 to 18446744073709551615                                  |
