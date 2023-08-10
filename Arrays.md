@@ -75,3 +75,21 @@ func main() {
     fmt.Println(arr2)
 }
 ```
+## Access Elements of an Array
+You can access a specific array element by referring to the index number.
+
+In Go, array indexes start at 0. That means that [0] is the first element, [1] is the second element, etc.
+
+### Example :
+This example shows how to access the first and third elements in the prices array:
+```go
+package main
+import ("fmt")
+
+func main() {
+  prices := [3]int{10,20,30}
+
+  fmt.Println(prices[0])
+  fmt.Println(prices[2])
+}
+```
