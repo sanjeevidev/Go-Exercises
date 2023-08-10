@@ -80,7 +80,7 @@ You can access a specific array element by referring to the index number.
 
 In Go, array indexes start at 0. That means that [0] is the first element, [1] is the second element, etc.
 
-### Example :
+### Example
 This example shows how to access the first and third elements in the prices array:
 ```go
 package main
@@ -91,5 +91,22 @@ func main() {
 
   fmt.Println(prices[0])
   fmt.Println(prices[2])
+}
+```
+## Change Elements of an Array
+You can also change the value of a specific array element by referring to the index number.
+
+### Example
+This example shows how to change the value of the third element in the prices array: 
+
+```go
+package main
+import ("fmt")
+
+func main() {
+  prices := [3]int{10,20,30}
+
+  prices[2] = 50
+  fmt.Println(prices)
 }
 ```
