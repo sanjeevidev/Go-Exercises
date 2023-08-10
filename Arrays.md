@@ -33,3 +33,45 @@ In Go, there are two ways to declare an array:
     `
 
 **Note:** The length specifies the number of elements to store in the array. In Go, arrays have a fixed length. The length of the array is either defined by a number or is inferred (meaning that the compiler decides the length of the array based on the number of values).
+
+# Array Examples
+
+## Example 1: Arrays with Defined Lengths
+
+This example declares two arrays (`arr1` and `arr2`) with defined lengths:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var arr1 = [3]int{1, 2, 3}
+    arr2 := [5]int{4, 5, 6, 7, 8}
+
+    fmt.Println(arr1)
+    fmt.Println(arr2)
+}
+```
+
+## Example 2: Arrays with Inferred Lengths
+
+This example declares two arrays (`arr1` and `arr2`) with inferred lengths:
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var arr1 = [...]int{1, 2, 3}
+    arr2 := [...]int{4, 5, 6, 7, 8}
+
+    fmt.Println(arr1)
+    fmt.Println(arr2)
+}
+```
