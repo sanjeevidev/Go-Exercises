@@ -130,3 +130,20 @@ func main() {
   fmt.Println(arr3)
 }
 ```
+
+## Initialize Only Specific Elements
+It is possible to initialize only specific elements in an array.
+
+### Example
+This example initializes only the second and third elements of the array: 
+
+```go
+package main
+import ("fmt")
+
+func main() {
+  arr1 := [5]int{1:10,2:40}
+
+  fmt.Println(arr1)
+}
+```
