@@ -118,3 +118,20 @@ func main() {
   fmt.Println(prices[2])
 }
 ```
+
+## Change Elements of a Slice
+You can also change a specific slice element by referring to the index number.
+
+### Example
+This example shows how to change the third element in the prices slice:
+``` go
+package main
+import ("fmt")
+
+func main() {
+  prices := []int{10,20,30}
+  prices[2] = 50
+  fmt.Println(prices[0])
+  fmt.Println(prices[2])
+}
+```
