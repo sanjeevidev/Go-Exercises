@@ -48,3 +48,25 @@ func main() {
   fmt.Println(myslice2)
 }
 ```
+
+## Create a Slice From an Array
+You can create a slice by slicing an array:
+
+### Syntax
+`var myarray = [length]datatype{values} // An array`
+`myslice := myarray[start:end] // A slice made from the array`
+### Example
+This example shows how to create a slice from an array:
+``` go
+package main
+import ("fmt")
+
+func main() {
+  arr1 := [6]int{10, 11, 12, 13, 14,15}
+  myslice := arr1[2:4]
+
+  fmt.Printf("myslice = %v\n", myslice)
+  fmt.Printf("length = %d\n", len(myslice))
+  fmt.Printf("capacity = %d\n", cap(myslice))
+}
+```
