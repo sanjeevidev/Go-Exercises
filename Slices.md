@@ -99,3 +99,22 @@ func main() {
   fmt.Printf("capacity = %d\n", cap(myslice2))
 }
 ```
+
+## Access Elements of a Slice
+You can access a specific slice element by referring to the index number.
+
+In Go, indexes start at 0. That means that [0] is the first element, [1] is the second element, etc.
+
+### Example
+This example shows how to access the first and third elements in the prices slice:
+``` go
+package main
+import ("fmt")
+
+func main() {
+  prices := []int{10,20,30}
+
+  fmt.Println(prices[0])
+  fmt.Println(prices[2])
+}
+```
