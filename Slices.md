@@ -71,3 +71,31 @@ func main() {
   fmt.Printf("capacity = %d\n", cap(myslice))
 }
 ```
+
+## Create a Slice With The make() Function
+The make() function can also be used to create a slice.
+
+### Syntax
+`slice_name := make([]type, length, capacity)`
+
+Note: If the capacity parameter is not defined, it will be equal to length.
+
+### Example
+This example shows how to create slices using the make() function:
+``` go
+package main
+import ("fmt")
+
+func main() {
+  myslice1 := make([]int, 5, 10)
+  fmt.Printf("myslice1 = %v\n", myslice1)
+  fmt.Printf("length = %d\n", len(myslice1))
+  fmt.Printf("capacity = %d\n", cap(myslice1))
+
+  // with omitted capacity
+  myslice2 := make([]int, 5)
+  fmt.Printf("myslice2 = %v\n", myslice2)
+  fmt.Printf("length = %d\n", len(myslice2))
+  fmt.Printf("capacity = %d\n", cap(myslice2))
+}
+```
