@@ -54,6 +54,7 @@ You can create a slice by slicing an array:
 
 ### Syntax
 `var myarray = [length]datatype{values} // An array`
+
 `myslice := myarray[start:end] // A slice made from the array`
 ### Example
 This example shows how to create a slice from an array:
